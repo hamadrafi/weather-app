@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="locationTitle">Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter city name (e.g., Karachi)">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="prompt-message" class="prompt-message">Please search for a city to see the weather forecast.</div>
+        <div id="current-weather" class="current-weather"></div>
+        <div id="days-list" class="days-list"></div>
+        <table id="hourly-table" class="hourly-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Temperature (°C)</th>
+                    <th>Condition</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
