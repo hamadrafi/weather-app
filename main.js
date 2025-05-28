@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to fetch and display weather data
   async function fetchWeather(location) {
     const currentUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
-    const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5&hourly=1`;
+    const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3&hourly=1`;
 
     try {
       // Clear previous data
